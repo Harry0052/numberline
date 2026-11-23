@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1",
+  "document": {
+    "id": "synthetic-methods-note",
+    "sha256": "cd335abba1cfbd920e3485b7905b2624f0a5ff6105dd6e22c2f6d0683a510591",
+    "encoding": "UTF-8"
+  },
+  "comparisons": [
+    {
+      "id": "C01",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C01L",
+        "span": {
+          "start": 410,
+          "end": 436
+        },
+        "value": "1.2",
+        "unit": "furlong",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C01R",
+        "span": {
+          "start": 438,
+          "end": 465
+        },
+        "value": "1,200",
+        "unit": "g",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      }
+    }
+  ]
+}
