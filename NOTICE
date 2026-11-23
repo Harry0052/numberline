@@ -1,0 +1,26 @@
+NumberLine
+Copyright 2026 Harry Malhi
+Licensed under the MIT License. See the LICENSE file.
+
+The runnable jar built by `./mvnw package` shades these runtime libraries so
+`java -jar` does not need a separate classpath. Their license notices are
+retained inside that jar under META-INF.
+
+Jackson databind, Jackson core, and Jackson annotations
+Copyright FasterXML, LLC and contributors
+Licensed under the Apache License, Version 2.0
+https://github.com/FasterXML/jackson-databind
+https://www.apache.org/licenses/LICENSE-2.0
+
+JUnit Jupiter 6.1.3 is a test-scoped dependency and is not included in the
+runtime jar.
+Licensed under the Eclipse Public License, Version 2.0
+https://junit.org/junit5/
+
+The Maven Wrapper scripts (`mvnw`, `mvnw.cmd`) and the wrapper jar they
+download are from the Apache Maven Wrapper project.
+Licensed under the Apache License, Version 2.0
+https://maven.apache.org/wrapper/
+
+NumberLine does not depend on Indriya at runtime. The overlap notes in
+docs/overlap.md record that library as a comparison point only.

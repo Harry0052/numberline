@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1",
+  "metric": "24-case basis classification",
+  "note": "Hand calculations use exact decimal factors. They were checked with Python decimal.Decimal and are not produced by the Java engine.",
+  "cases": [
+    {
+      "id": "C01",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "g",
+      "normalizedStatus": "shown",
+      "leftCanonical": "1200",
+      "rightCanonical": "1200",
+      "arithmetic": "equal",
+      "leftExcerpt": "Alpha specimen mass 1.2 kg",
+      "rightExcerpt": "Alpha specimen mass 1,200 g",
+      "handCalc": "1.2 kg = 1.2 × 1000 g = 1200 g. 1,200 g = 1200 g. Period, population, and currency match, so the basis is compatible and the magnitudes are equal."
+    },
+    {
+      "id": "C02",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "g",
+      "normalizedStatus": "shown",
+      "leftCanonical": "1200",
+      "rightCanonical": "1200",
+      "arithmetic": "equal",
+      "leftExcerpt": "Reversed specimen mass 1,200 g",
+      "rightExcerpt": "Reversed specimen mass 1.2 kg",
+      "handCalc": "Operand reversal of C01. 1,200 g = 1200 g and 1.2 kg = 1200 g. Equality does not depend on which side is written first."
+    },
+    {
+      "id": "C03",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "g",
+      "normalizedStatus": "shown",
+      "leftCanonical": "1200",
+      "rightCanonical": "1200",
+      "arithmetic": "equal",
+      "leftExcerpt": "Aliquot reference mass 1.2 kg",
+      "rightExcerpt": "Aliquot reference mass 1,200,000 mg",
+      "handCalc": "1.2 kg = 1200 g. 1,200,000 mg = 1,200,000 / 1000 g = 1200 g."
+    },
+    {
+      "id": "C04",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "g",
+      "normalizedStatus": "shown",
+      "leftCanonical": "1200",
+      "rightCanonical": "1.2",
+      "arithmetic": "mismatch",
+      "leftExcerpt": "Mismatch specimen mass 1.2 kg",
+      "rightExcerpt": "Mismatch specimen mass 1.2 g",
+      "handCalc": "1.2 kg = 1200 g and 1.2 g = 1.2 g. The basis matches, so the comparison is allowed, and the magnitudes are not equal. Compatibility is not arithmetic equality."
+    },
+    {
+      "id": "C05",
+      "verdict": "incompatible",
+      "issueClasses": [
+        "incompatible_unit"
+      ],
+      "basisFields": [
+        "unit"
+      ],
+      "missingFields": [],
+      "conversionAttempted": false,
+      "conversionApplied": false,
+      "canonicalUnit": null,
+      "normalizedStatus": "not_evaluated",
+      "leftCanonical": null,
+      "rightCanonical": null,
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Dimension specimen mass 1.2 kg",
+      "rightExcerpt": "Dimension specimen tally 1.2 count",
+      "handCalc": "1.2 kg is mass and 1.2 count is a count. The numeric strings match. Dimensions differ, so no conversion is attempted."
+    },
+    {
+      "id": "C06",
+      "verdict": "incompatible",
+      "issueClasses": [
+        "incompatible_denominator"
+      ],
+      "basisFields": [
+        "denominator"
+      ],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "March completed share 8 percent",
+      "rightExcerpt": "March customer share 8 percent",
+      "handCalc": "Both sides are 8 percent = 0.08. Denominators are orders placed versus customers billed. Equal scales do not make the bases comparable."
+    },
+    {
+      "id": "C07",
+      "verdict": "unknown",
+      "issueClasses": [
+        "unknown_missing_period"
+      ],
+      "basisFields": [],
+      "missingFields": [
+        "period"
+      ],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Undated left share 8 percent",
+      "rightExcerpt": "Undated right share 8 percent",
+      "handCalc": "Both sides are 8 percent of customers billed and the population matches, but neither side declares a period. The classification is unknown rather than compatible."
+    },
+    {
+      "id": "C08",
+      "verdict": "unknown",
+      "issueClasses": [
+        "unknown_missing_population"
+      ],
+      "basisFields": [],
+      "missingFields": [
+        "population"
+      ],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "g",
+      "normalizedStatus": "shown",
+      "leftCanonical": "1200",
+      "rightCanonical": "1200",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Unassigned specimen mass 1.2 kg",
+      "rightExcerpt": "Unassigned specimen mass 1,200 g",
+      "handCalc": "1.2 kg = 1200 g and 1,200 g = 1200 g, but the population key is omitted on both sides. Equal mass does not fill in a missing population."
+    },
+    {
+      "id": "C09",
+      "verdict": "incompatible",
+      "issueClasses": [
+        "incompatible_period"
+      ],
+      "basisFields": [
+        "period"
+      ],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": false,
+      "canonicalUnit": "USD",
+      "normalizedStatus": "shown",
+      "leftCanonical": "10",
+      "rightCanonical": "10",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Year 2019 program cost 10 USD",
+      "rightExcerpt": "Year 2020 program cost 10 USD",
+      "handCalc": "Both amounts are 10 USD. The windows are calendar 2019 and calendar 2020. No inflation factor is applied, so the period mismatch stands on its own."
+    },
+    {
+      "id": "C10",
+      "verdict": "incompatible",
+      "issueClasses": [
+        "incompatible_currency"
+      ],
+      "basisFields": [
+        "currency"
+      ],
+      "missingFields": [],
+      "conversionAttempted": false,
+      "conversionApplied": false,
+      "canonicalUnit": null,
+      "normalizedStatus": "not_evaluated",
+      "leftCanonical": null,
+      "rightCanonical": null,
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Currency left program cost 10 USD",
+      "rightExcerpt": "Currency right program cost 10 EUR",
+      "handCalc": "10 USD and 10 EUR share a year and a numeric string. No exchange rate is applied, so the currency mismatch is incompatible and magnitudes are not placed on one scale."
+    },
+    {
+      "id": "C11",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": false,
+      "canonicalUnit": "USD",
+      "normalizedStatus": "shown",
+      "leftCanonical": "10",
+      "rightCanonical": "10",
+      "arithmetic": "equal",
+      "leftExcerpt": "Matched plain program cost 10 USD",
+      "rightExcerpt": "Matched marked program cost 10 USD <script>alert(1)</script> **bold**",
+      "handCalc": "Both sides are 10 USD for calendar 2020 and the same program population. No scale factor is required. The right-hand excerpt deliberately contains markup."
+    },
+    {
+      "id": "C12",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "equal",
+      "leftExcerpt": "Normalized event share 8 percent",
+      "rightExcerpt": "Normalized event share 80 per_1000",
+      "handCalc": "8 percent = 8/100 = 0.08. 80 per 1,000 = 80/1000 = 0.08. Numerator, denominator, population, and period match."
+    },
+    {
+      "id": "C13",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "equal",
+      "leftExcerpt": "Reversed event share 80 per_1000",
+      "rightExcerpt": "Reversed event share 8 percent",
+      "handCalc": "Operand reversal of the C12 rate normalization. 80/1000 = 0.08 and 8/100 = 0.08."
+    },
+    {
+      "id": "C14",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "equal",
+      "leftExcerpt": "Proportion event share 0.08 proportion",
+      "rightExcerpt": "Proportion event share 8 percent",
+      "handCalc": "0.08 proportion = 0.08. 8 percent = 0.08. Same event, patient, and cohort basis."
+    },
+    {
+      "id": "C15",
+      "verdict": "incompatible",
+      "issueClasses": [
+        "incompatible_population"
+      ],
+      "basisFields": [
+        "population"
+      ],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Alpha mortality share 8 percent",
+      "rightExcerpt": "Beta mortality share 8 percent",
+      "handCalc": "Both sides say 8 percent of patients enrolled. Population keys are cohort-alpha and cohort-beta, so the populations are not the same."
+    },
+    {
+      "id": "C16",
+      "verdict": "incompatible",
+      "issueClasses": [
+        "incompatible_denominator"
+      ],
+      "basisFields": [
+        "denominator"
+      ],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Patient occupancy share 8 percent",
+      "rightExcerpt": "Hospital occupancy share 8 percent",
+      "handCalc": "8 percent of patients and 8 percent of hospitals both scale to 0.08. Per-patient and per-hospital percentages stay incompatible."
+    },
+    {
+      "id": "C17",
+      "verdict": "incompatible",
+      "issueClasses": [
+        "incompatible_numerator"
+      ],
+      "basisFields": [
+        "numerator"
+      ],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Death numerator share 8 percent",
+      "rightExcerpt": "Admission numerator share 8 percent",
+      "handCalc": "Both are 8 percent of patients enrolled in cohort Alpha. Numerators are deaths versus admissions."
+    },
+    {
+      "id": "C18",
+      "verdict": "unknown",
+      "issueClasses": [
+        "unknown_missing_denominator"
+      ],
+      "basisFields": [],
+      "missingFields": [
+        "denominator"
+      ],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Missing denominator left share 8 percent",
+      "rightExcerpt": "Missing denominator right share 8 percent",
+      "handCalc": "Both values are 8 percent, but the denominator definition is null. A percent without a denominator is unknown, not a comparable proportion."
+    },
+    {
+      "id": "C19",
+      "verdict": "unknown",
+      "issueClasses": [
+        "unknown_missing_currency"
+      ],
+      "basisFields": [],
+      "missingFields": [
+        "currency"
+      ],
+      "conversionAttempted": true,
+      "conversionApplied": false,
+      "canonicalUnit": "money",
+      "normalizedStatus": "shown",
+      "leftCanonical": "10",
+      "rightCanonical": "10",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Unspecified currency cost 10 money",
+      "rightExcerpt": "Unspecified currency twin 10 money",
+      "handCalc": "Both amounts are 10 money units with the currency code omitted. They are not treated as the same currency, and they are not converted."
+    },
+    {
+      "id": "C20",
+      "verdict": "unknown",
+      "issueClasses": [
+        "unknown_missing_numerator"
+      ],
+      "basisFields": [],
+      "missingFields": [
+        "numerator"
+      ],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Missing numerator left share 8 percent",
+      "rightExcerpt": "Missing numerator right share 8 percent",
+      "handCalc": "Both sides are 8 percent of patients enrolled, but the numerator definition is null. The rate basis is incomplete."
+    },
+    {
+      "id": "C21",
+      "verdict": "incompatible",
+      "issueClasses": [
+        "incompatible_currency",
+        "incompatible_period"
+      ],
+      "basisFields": [
+        "currency",
+        "period"
+      ],
+      "missingFields": [],
+      "conversionAttempted": false,
+      "conversionApplied": false,
+      "canonicalUnit": null,
+      "normalizedStatus": "not_evaluated",
+      "leftCanonical": null,
+      "rightCanonical": null,
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Cross basis cost 10 USD",
+      "rightExcerpt": "Cross basis cost 10 EUR",
+      "handCalc": "10 USD in 2019 versus 10 EUR in 2020. The numeric strings match. Currency and period are flagged independently, and no exchange or inflation factor is applied."
+    },
+    {
+      "id": "C22",
+      "verdict": "incompatible",
+      "issueClasses": [
+        "incompatible_period"
+      ],
+      "basisFields": [
+        "period"
+      ],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": false,
+      "canonicalUnit": "USD",
+      "normalizedStatus": "shown",
+      "leftCanonical": "10",
+      "rightCanonical": "10",
+      "arithmetic": "not_evaluated",
+      "leftExcerpt": "Half year program cost 10 USD",
+      "rightExcerpt": "Full year program cost 10 USD",
+      "handCalc": "Both amounts are 10 USD for the same program. The windows are 1 January through 30 June 2024 and 1 January through 31 December 2024. The shorter window is not prorated."
+    },
+    {
+      "id": "C23",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "proportion",
+      "normalizedStatus": "shown",
+      "leftCanonical": "0.08",
+      "rightCanonical": "0.08",
+      "arithmetic": "equal",
+      "leftExcerpt": "Aligned customer share 8 percent",
+      "rightExcerpt": "Aligned customer match 8 percent",
+      "handCalc": "Both sides are 8 percent of customers billed for March 2024 with the same numerator and population. 8/100 = 0.08 on each side."
+    },
+    {
+      "id": "C24",
+      "verdict": "compatible",
+      "issueClasses": [],
+      "basisFields": [],
+      "missingFields": [],
+      "conversionAttempted": true,
+      "conversionApplied": true,
+      "canonicalUnit": "g",
+      "normalizedStatus": "shown",
+      "leftCanonical": "2000",
+      "rightCanonical": "2000",
+      "arithmetic": "equal",
+      "leftExcerpt": "Crate specimen mass 2 kg",
+      "rightExcerpt": "Crate specimen mass 2,000 g",
+      "handCalc": "2 kg = 2000 g. 2,000 g = 2000 g. The surrounding passage contains multibyte characters; these spans stay on code-point boundaries."
+    }
+  ]
+}

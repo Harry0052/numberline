@@ -1,0 +1,826 @@
+{
+  "schemaVersion": "1",
+  "document": {
+    "id": "synthetic-methods-note",
+    "sha256": "cd335abba1cfbd920e3485b7905b2624f0a5ff6105dd6e22c2f6d0683a510591",
+    "encoding": "UTF-8"
+  },
+  "comparisons": [
+    {
+      "id": "C01",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C01L",
+        "span": {
+          "start": 410,
+          "end": 436
+        },
+        "value": "1.2",
+        "unit": "kg",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C01R",
+        "span": {
+          "start": 438,
+          "end": 465
+        },
+        "value": "1,200",
+        "unit": "g",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C02",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C02L",
+        "span": {
+          "start": 467,
+          "end": 497
+        },
+        "value": "1,200",
+        "unit": "g",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C02R",
+        "span": {
+          "start": 499,
+          "end": 528
+        },
+        "value": "1.2",
+        "unit": "kg",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C03",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C03L",
+        "span": {
+          "start": 530,
+          "end": 559
+        },
+        "value": "1.2",
+        "unit": "kg",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C03R",
+        "span": {
+          "start": 561,
+          "end": 596
+        },
+        "value": "1,200,000",
+        "unit": "mg",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C04",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C04L",
+        "span": {
+          "start": 598,
+          "end": 627
+        },
+        "value": "1.2",
+        "unit": "kg",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C04R",
+        "span": {
+          "start": 629,
+          "end": 657
+        },
+        "value": "1.2",
+        "unit": "g",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C05",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C05L",
+        "span": {
+          "start": 659,
+          "end": 689
+        },
+        "value": "1.2",
+        "unit": "kg",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C05R",
+        "span": {
+          "start": 691,
+          "end": 725
+        },
+        "value": "1.2",
+        "unit": "count",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C06",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C06L",
+        "span": {
+          "start": 727,
+          "end": 758
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-03-01",
+        "periodEnd": "2024-03-31",
+        "numerator": "selected events",
+        "denominator": "orders placed",
+        "populationKey": "march-activity"
+      },
+      "right": {
+        "sourceId": "C06R",
+        "span": {
+          "start": 760,
+          "end": 790
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-03-01",
+        "periodEnd": "2024-03-31",
+        "numerator": "selected events",
+        "denominator": "customers billed",
+        "populationKey": "march-activity"
+      }
+    },
+    {
+      "id": "C07",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C07L",
+        "span": {
+          "start": 792,
+          "end": 820
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": null,
+        "periodEnd": null,
+        "numerator": "selected events",
+        "denominator": "customers billed",
+        "populationKey": "march-activity"
+      },
+      "right": {
+        "sourceId": "C07R",
+        "span": {
+          "start": 822,
+          "end": 851
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": null,
+        "periodEnd": null,
+        "numerator": "selected events",
+        "denominator": "customers billed",
+        "populationKey": "march-activity"
+      }
+    },
+    {
+      "id": "C08",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C08L",
+        "span": {
+          "start": 853,
+          "end": 884
+        },
+        "value": "1.2",
+        "unit": "kg",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": null
+      },
+      "right": {
+        "sourceId": "C08R",
+        "span": {
+          "start": 886,
+          "end": 918
+        },
+        "value": "1,200",
+        "unit": "g",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": null
+      }
+    },
+    {
+      "id": "C09",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C09L",
+        "span": {
+          "start": 920,
+          "end": 949
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "USD",
+        "periodStart": "2019-01-01",
+        "periodEnd": "2019-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      },
+      "right": {
+        "sourceId": "C09R",
+        "span": {
+          "start": 951,
+          "end": 980
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "USD",
+        "periodStart": "2020-01-01",
+        "periodEnd": "2020-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      }
+    },
+    {
+      "id": "C10",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C10L",
+        "span": {
+          "start": 982,
+          "end": 1015
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "USD",
+        "periodStart": "2020-01-01",
+        "periodEnd": "2020-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      },
+      "right": {
+        "sourceId": "C10R",
+        "span": {
+          "start": 1017,
+          "end": 1051
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "EUR",
+        "periodStart": "2020-01-01",
+        "periodEnd": "2020-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      }
+    },
+    {
+      "id": "C11",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C11L",
+        "span": {
+          "start": 1053,
+          "end": 1086
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "USD",
+        "periodStart": "2020-01-01",
+        "periodEnd": "2020-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      },
+      "right": {
+        "sourceId": "C11R",
+        "span": {
+          "start": 1088,
+          "end": 1157
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "USD",
+        "periodStart": "2020-01-01",
+        "periodEnd": "2020-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      }
+    },
+    {
+      "id": "C12",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C12L",
+        "span": {
+          "start": 1159,
+          "end": 1191
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "events",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C12R",
+        "span": {
+          "start": 1193,
+          "end": 1227
+        },
+        "value": "80",
+        "unit": "per_1000",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "events",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C13",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C13L",
+        "span": {
+          "start": 1229,
+          "end": 1261
+        },
+        "value": "80",
+        "unit": "per_1000",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "events",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C13R",
+        "span": {
+          "start": 1263,
+          "end": 1293
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "events",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C14",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C14L",
+        "span": {
+          "start": 1295,
+          "end": 1333
+        },
+        "value": "0.08",
+        "unit": "proportion",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "events",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C14R",
+        "span": {
+          "start": 1335,
+          "end": 1367
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "events",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C15",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C15L",
+        "span": {
+          "start": 1369,
+          "end": 1400
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "mortality",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C15R",
+        "span": {
+          "start": 1402,
+          "end": 1432
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "mortality",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-beta"
+      }
+    },
+    {
+      "id": "C16",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C16L",
+        "span": {
+          "start": 1434,
+          "end": 1467
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "occupied status",
+        "denominator": "patients",
+        "populationKey": "health-system"
+      },
+      "right": {
+        "sourceId": "C16R",
+        "span": {
+          "start": 1469,
+          "end": 1503
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "occupied status",
+        "denominator": "hospitals",
+        "populationKey": "health-system"
+      }
+    },
+    {
+      "id": "C17",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C17L",
+        "span": {
+          "start": 1505,
+          "end": 1536
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "deaths",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C17R",
+        "span": {
+          "start": 1538,
+          "end": 1573
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "admissions",
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C18",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C18L",
+        "span": {
+          "start": 1575,
+          "end": 1615
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "selected events",
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C18R",
+        "span": {
+          "start": 1617,
+          "end": 1658
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": "selected events",
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C19",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C19L",
+        "span": {
+          "start": 1660,
+          "end": 1694
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": null,
+        "periodStart": "2020-01-01",
+        "periodEnd": "2020-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      },
+      "right": {
+        "sourceId": "C19R",
+        "span": {
+          "start": 1696,
+          "end": 1730
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": null,
+        "periodStart": "2020-01-01",
+        "periodEnd": "2020-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      }
+    },
+    {
+      "id": "C20",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C20L",
+        "span": {
+          "start": 1732,
+          "end": 1770
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C20R",
+        "span": {
+          "start": 1772,
+          "end": 1811
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": "patients enrolled",
+        "populationKey": "cohort-alpha"
+      }
+    },
+    {
+      "id": "C21",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C21L",
+        "span": {
+          "start": 1813,
+          "end": 1836
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "USD",
+        "periodStart": "2019-01-01",
+        "periodEnd": "2019-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      },
+      "right": {
+        "sourceId": "C21R",
+        "span": {
+          "start": 1838,
+          "end": 1861
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "EUR",
+        "periodStart": "2020-01-01",
+        "periodEnd": "2020-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      }
+    },
+    {
+      "id": "C22",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C22L",
+        "span": {
+          "start": 1863,
+          "end": 1892
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "USD",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-06-30",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      },
+      "right": {
+        "sourceId": "C22R",
+        "span": {
+          "start": 1894,
+          "end": 1923
+        },
+        "value": "10",
+        "unit": "money",
+        "currency": "USD",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "program-budget"
+      }
+    },
+    {
+      "id": "C23",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C23L",
+        "span": {
+          "start": 1925,
+          "end": 1957
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-03-01",
+        "periodEnd": "2024-03-31",
+        "numerator": "selected events",
+        "denominator": "customers billed",
+        "populationKey": "march-activity"
+      },
+      "right": {
+        "sourceId": "C23R",
+        "span": {
+          "start": 1959,
+          "end": 1991
+        },
+        "value": "8",
+        "unit": "percent",
+        "currency": null,
+        "periodStart": "2024-03-01",
+        "periodEnd": "2024-03-31",
+        "numerator": "selected events",
+        "denominator": "customers billed",
+        "populationKey": "march-activity"
+      }
+    },
+    {
+      "id": "C24",
+      "operation": "compare",
+      "left": {
+        "sourceId": "C24L",
+        "span": {
+          "start": 1993,
+          "end": 2017
+        },
+        "value": "2",
+        "unit": "kg",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      },
+      "right": {
+        "sourceId": "C24R",
+        "span": {
+          "start": 2019,
+          "end": 2046
+        },
+        "value": "2,000",
+        "unit": "g",
+        "currency": null,
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "numerator": null,
+        "denominator": null,
+        "populationKey": "cohort-alpha"
+      }
+    }
+  ]
+}
