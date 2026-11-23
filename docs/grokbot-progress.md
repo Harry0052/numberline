@@ -1,5 +1,35 @@
 # Grokbot progress
 
+## P07 — Publish and verify on GitHub
+
+**Phase and status:** P07 PASS
+
+**Files changed:**
+
+- `docs/grokbot-progress.md` (this record; the published tag does not include this paragraph)
+
+**Commands and results:**
+
+- Destination checked: `Harry0052/numberline`, visibility `PUBLIC`, license `MIT`, default branch `main`. The pull request was opened against `main` and was not merged.
+- Pull request: https://github.com/Harry0052/numberline/pull/1
+- Tested commit: `666df0fcb1b9fa162c9299f6e5649e9503844458`
+- Tag: `v0.1.0` points at that commit. Tag object `42606d6ac2b40da95f47316bd0bebb11a2dcdcb3`.
+- Push CI: https://github.com/Harry0052/numberline/actions/runs/45109338106 conclusion `success`
+- Pull request CI: https://github.com/Harry0052/numberline/actions/runs/45109348012 conclusion `success` (Test, Demo, and artifact upload)
+- Clone of `https://github.com/Harry0052/numberline.git` at tag `v0.1.0` resolved to `666df0fcb1b9fa162c9299f6e5649e9503844458`. `./mvnw -B -ntp verify` reported 11 tests, 0 failures. `./scripts/demo.sh` wrote `summary: total=24 compatible=10 incompatible=9 unknown=5` and `C06 verdict=incompatible`. The invalid sample printed `invalid_input: number: comparison C01 left value 'NaN' is not a finite decimal`.
+
+**Artifact paths:**
+
+- Runnable jar from the published revision: `target/numberline-0.1.0.jar` (built locally from the clone; CI also uploaded it as `numberline-demo`)
+- `target/demo-report.txt`
+- `target/demo-report.json`
+
+**Open issues:**
+
+- None. `main` was not updated. The owner merges the pull request.
+
+**Next phase:** none
+
 ## P06 — Prepare a reproducible open-source release
 
 **Phase and status:** P06 PASS
